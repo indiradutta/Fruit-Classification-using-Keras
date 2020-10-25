@@ -5,6 +5,8 @@
         pip install tensorflow
         pip install keras
         pip install numpy
+        pip install PIL
+        pip install urllib
 
 - Cloning the Repository: 
 
