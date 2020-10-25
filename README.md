@@ -17,6 +17,9 @@ The Fruit Classification Dataset contains 6 classifications:
 - Mango
 <br>
 
+<img src="images/apple.jpg" height = "90" >  <img src="images/avocado.jpg" height = "90" >  <img src="images/banana.jpg" height = "90" >  <img src="images/blueberry.jpg" height = "90" >  <img src="images/cucumber.jpg" height = "90" >  <img src="images/mango.jpg" height = "90" >
+<br>
+
 The raw data has been manually updated in a format where there are 2 main folders namely: train and test, each containing the 6 classes.
 ## Steps Involved:
 
