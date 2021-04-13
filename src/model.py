@@ -3,6 +3,7 @@ from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, Dropou
 from tensorflow.keras.losses import sparse_categorical_crossentropy
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from data_preprocess import preprocess
 
 def model():
 
@@ -29,6 +30,8 @@ def model():
   model.add(Dense(6,activation='softmax'))
 
   model.compile(optimizer = 'Adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+  
+  train_datagen = preprocess()
 
   model.fit_generator(train_datagen,epochs=4,steps_per_epoch=2753//32)
   
